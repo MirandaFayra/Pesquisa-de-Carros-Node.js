@@ -1,20 +1,10 @@
-#Readme
-
 ## Node.js - Campinas Tech Talents - SENSEDIA
 
 ### Objetivo:
 Aprender a criação de um projeto em Node.JS
 
 ### Temas Abordados:
-*NPM;
-*Criação de Projeto em Node;
-*Instalações de Dependências;
-*Conceitos básicos de Express;
-*Configuração de Aplicações Multi ambiente;
-*Teste de API;
-*Postman;
-*Callback;
-*Funções Assíncronas e Síncronas
+NPM | Criação de Projeto em Node | Instalações de Dependências | Conceitos básicos de Express | Configuração de Aplicações Multi ambiente | Teste de API | Postman | Callback |Funções Assíncronas e Síncronas
 
 ### Contextualização
 
