@@ -14,6 +14,8 @@ Lançado em 2009, é uma das tecnologias mais utilizadas. É um ambiente para a 
 ### Funcionamento
 ![GitHub Logo](IMG-node.png)
 
+###### Fonte: https://blog.schoolofnet.com/como-comecar-com-node-js/
+
 
 
 ### Bibliografia
