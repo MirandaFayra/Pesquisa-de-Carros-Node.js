@@ -2,7 +2,7 @@ const moment = require('moment');
 const{v4:uuidv4} = require("uuid");
 const carros =[];
 
-app.get('/v1/logs', function (req, res) {
+app.get('/v1/carros/:id', function (req, res) {
     // oq vc deseja que retorne do conteúdo tipo o 404
     return res.status(200).json(logs);
 });
