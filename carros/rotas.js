@@ -1,6 +1,7 @@
 const moment = require('moment');
 const{v4:uuidv4} = require("uuid");
-const logs =[];
+const carros =[];
+
 app.get('/v1/logs', function (req, res) {
     // oq vc deseja que retorne do conteúdo tipo o 404
     return res.status(200).json(logs);
@@ -46,7 +47,8 @@ app.post('/v1/carros', function(req, res) {
         ...req.body,
         timestamp:moment().toISOString()
     };
-    logs.push(evento);
+
+    carros.push(evento);
     return res.status (201).json(evento);
 })
 
