@@ -16,26 +16,25 @@ app.post('/v1/carros', function(req, res) {
                 mensagem: "Opa, faltou o nome do carro"
             }
         )
-    }
-    if(!marca.lenght){
+    }else if(!marca.lenght){
         res.status(422).json(
             {
                 mensagem: "Opa, faltou a marca do carro"
             }
         )
-    }if(!tipo.lenght){
+    }else if(!tipo.lenght){
         res.status(422).json(
             {
                 mensagem: "Opa, faltou o tipo do carro"
             }
         )
-    }if(!placa.lenght){
+    }else if(!placa.lenght){
         res.status(422).json(
             {
                 mensagem: "Opa, faltou a placa do carro"
             }
         )
-    }if(!cor.lenght){
+    }else if(!cor.lenght){
         res.status(422).json(
             {
                 mensagem: "Opa, faltou a cor do carro"
