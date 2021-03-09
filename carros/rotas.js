@@ -7,6 +7,13 @@ const carros =[];
 app.get('/v1/carros/:id', function (req, res) {
     // oq vc deseja que retorne do conteúdo tipo o 404
     // buscar o carro por id, usar array filter => se o código que for salvar, for igual o que você têm ele retorna o carro desejado
+    return res.status(200).json(...carros);
+
+});
+
+app.get('/v1/carros/:id', function (req, res) {
+    // oq vc deseja que retorne do conteúdo tipo o 404
+    // buscar o carro por id, usar array filter => se o código que for salvar, for igual o que você têm ele retorna o carro desejado
     const carro = carros.filter(item => item.id == id)
 
     const{id} = req.params;
