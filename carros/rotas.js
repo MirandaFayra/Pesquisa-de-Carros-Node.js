@@ -10,7 +10,7 @@ app.get('/v1/carros/:id', function (req, res) {
     const carro = carros.filter(item => item.id == id)
 
     const{id} = req.params;
-    // destruir o objeto carros ...
+    // destruir (desestruturar o array) o objeto carros ...
     return res.status(200).json(...carros);
 
 });
@@ -19,31 +19,31 @@ app.post('/v1/carros', function(req, res) {
     // no express sempre vai existir dois parâmetros app.<verbo>("<<endpoint>>". (request, response))
     console.log(req.body);
     const{nome,marca,tipo,placa,cor} = req.body;
-    if(!nome.lenght){
+    if(!nome.length){
         res.status(422).json(
             {
                 mensagem: "Opa, faltou o nome do carro"
             }
         )
-    }else if(!marca.lenght){
+    }else if(!marca.length){
         res.status(422).json(
             {
                 mensagem: "Opa, faltou a marca do carro"
             }
         )
-    }else if(!tipo.lenght){
+    }else if(!tipo.length){
         res.status(422).json(
             {
                 mensagem: "Opa, faltou o tipo do carro"
             }
         )
-    }else if(!placa.lenght){
+    }else if(!placa.length){
         res.status(422).json(
             {
                 mensagem: "Opa, faltou a placa do carro"
             }
         )
-    }else if(!cor.lenght){
+    }else if(!cor.length){
         res.status(422).json(
             {
                 mensagem: "Opa, faltou a cor do carro"
