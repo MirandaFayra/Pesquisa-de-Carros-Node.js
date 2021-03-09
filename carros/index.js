@@ -12,6 +12,7 @@ const express = require('express');
 // sempre precisa ter o express para rodar o arquivo
 app = express();
 app.use(express.json());
+const axios = require('axios');
 // linkar arquivos de rotas
 require("./rotas");
 
