@@ -12,6 +12,23 @@ const express = require('express');
 // sempre precisa ter o express para rodar o arquivo
 app = express();
 app.use(express.json());
+// cada vez que for receber uma requisição no meio do serviço, ela precisa passar por esse texto => middleware
+// request/ response/ next para executar a próxima instrução
+app.use((req,res,next)=> {
+    const logar = async()=>{
+        const{data} = await axios.post("http://localhost:3000/v1/carros",{
+            servico:req.method,
+            evento:req.url,
+            data:req.body
+        });
+        return data
+    };
+    let data = logar();
+    data.then(log=> {
+        console.log(log)
+    });
+    next();
+}) 
 const axios = require('axios');
 // linkar arquivos de rotas
 require("./rotas");
