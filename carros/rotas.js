@@ -64,6 +64,7 @@ app.post('/v1/carros', function(req, res) {
     };
 
     carros.push(evento);
+    console.log("Executar o evento de registro")
     return res.status (201).json(evento);
 })
 
